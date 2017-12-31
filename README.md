@@ -179,6 +179,8 @@ dim(testingData)
 
 # Training Data using Decision Tree Model
 
+"Decision Tree is a simple Model. this model iteratively looks for the variable and value that best separates the categories. It is naturally suited to classification problems, but may struggle to capture some of the complexity in the data and is prone to overfitting. We can see that this approach performs much worse than the lda model above."
+
 dtModel <- rpart(classe~. , data=trainingData,method= "class")
 
 fancyRpartPlot(dtModel) 
@@ -288,6 +290,7 @@ plot(conMatDT$table , col = conMatDT$byClass, main=paste("Decision Tree Confusio
 
 
 # Training data using Random Forest Model
+"Random forest is essentially a bagged decision tree approach. Like boosting, this involves growing lots of simpler trees. However here trees are grown on random sub-sets of the data (both observations and variables). This approach tends to avoid overfitting and is very popular because it tends to work well “out of the box”."
 
 rfModel <- randomForest(classe~., data= trainingData)
 
