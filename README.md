@@ -1,8 +1,7 @@
 # Practical-Machine-Learning
-Peer-graded Assignment
-Practical Machine Learning
 
 Peer-graded Assignment
+
 
 # Preparing Platform and Loading Libraries
 
