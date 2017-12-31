@@ -600,3 +600,11 @@ predictTestGBR
 [1] B A B A A E D B A A B C B A E E A B B B
 
 Levels: A B C D E
+
+
+
+
+# conclusion
+
+As we can see the Decision Tree,Random Forest, and Generalized Boosted Regression models have 87.96%, 99.91%, 99.6% accuracy,respectivly. that means the models have 23.04% , 0.09% , and 0.4% error rate. Therefore, the random FOrest Model is the best model between the tested models for predicting "classe" variable. 
+
